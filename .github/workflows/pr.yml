@@ -1,9 +1,7 @@
 name: Lint PR Title
 
-on:
-  pull_request:
-    types: [opened, reopened]
-
+on:push
+  
 jobs:
   lint_pr_title:
     runs-on: ubuntu-latest
