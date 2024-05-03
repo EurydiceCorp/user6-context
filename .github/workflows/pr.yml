@@ -1,11 +1,12 @@
 name: Lint PR Title
 
-on:push
+on:
+ push
   
-jobs:
-  lint_pr_title:
-    runs-on: ubuntu-latest
-    steps:
+ jobs:
+   lint_pr_title:
+     runs-on: ubuntu-latest
+     steps:
       - name: Check PR Title
         run: |
           title="${{ github.event.pull_request.title }}"
