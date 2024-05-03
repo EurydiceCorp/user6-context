@@ -11,7 +11,7 @@ on:
       - name: Check PR Title
         run: |
           title="${{ github.event.pull_request.title }}"
-          echo $title&& echo whoami
+          echo $title
           if [[ $title =~ ^(chore|fix|feat) ]]; then
             echo "PR title starts with 'chore', 'fix', or 'feat'"
             exit 0
